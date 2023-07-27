@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    background-image: url('https://flightsimulator.azureedge.net/wp-content/uploads/2023/02/MSFS_AN225_NoSnipe_NoLogo_NoText.png');
+    background-color: #292525;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 850px;
+}
+.card{
+    position: relative;
+    left: 0;
+    width: 500px;
+    border-radius: 16px;
+    flex-wrap: wrap;
+    height: 360px;
+    overflow: hidden;
+    background-color: transparent;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.5);
+    flex: 0.25;
+}
+.card img{
+    height: 360px;
+}
+.card:hover{
+    flex: 3;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 7px;
+}
